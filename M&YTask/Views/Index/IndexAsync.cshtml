@@ -1,0 +1,27 @@
+﻿@using M_YTask.Model;
+@model List<Dollar>
+
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+
+
+    <h2>IMDB TOP 100 Dizi</h2>
+
+    <table class="table table-hover">
+        <tr>
+            <th>Sonuç</th>
+         
+        </tr>
+
+     @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.amount</td>
+            </tr>
+        }
+
+
+    </table>
+</div>
